@@ -1,0 +1,38 @@
+.navbar {
+  height: 13vh;
+}
+
+.navbar,
+.navbar ul {
+  display: flex;
+}
+
+.navbar {
+  justify-content: space-between;
+  padding: 10px 30px;
+  align-items: center;
+  /*background: linear-gradient(to right, #ffffff, #ffffff, #aaaaaa);*/
+  background-color: #fffffc;
+}
+
+.navbar li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.navbar_logo img {
+  height: 85px;
+}
+
+.nav-item p {
+  color: #4d4d4d;
+  font-weight: 540;
+  font-size: 20px;
+  font-family: "Courier New", monospace;
+  word-spacing: -6px;
+}
+
+.nav-item p:hover {
+  font-weight: 550;
+  color: black;
+}

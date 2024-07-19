@@ -1,0 +1,57 @@
+.services_div {
+  background-color: #c1c1c1;
+  text-align: center;
+  padding-top: 45px;
+}
+
+.services_div h1 {
+  font-size: 40px;
+  padding: 12px;
+}
+
+.services_inner_div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px;
+  text-align: center;
+  align-items: start;
+}
+
+.services_service {
+  width: 350px;
+  background-color: black;
+  padding: 25px;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.services_service h2 {
+  height: 70px;
+}
+
+.services_service img {
+  height: 150px;
+  margin: 15px 0;
+}
+
+.services_service p {
+  text-align: start;
+  height: 300px;
+  font-size: 20px;
+}
+
+/* Fade */
+.service-fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.service-fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}

@@ -1,0 +1,65 @@
+/* src/components/Contact.css */
+
+.main_contact_div {
+  background-color: #c1c1c1;
+  padding: 25px 0;
+}
+
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 40px;
+  padding: 12px;
+}
+
+.contact p {
+  margin-bottom: 10px;
+}
+
+.contact_form {
+  text-align: start;
+  margin-top: 30px;
+}
+
+.contact_form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact_form input[type="text"],
+.contact_form input[type="email"],
+.contact_form textarea,
+.contact_form button {
+  width: calc(100% - 20px); /* Adjust width as needed */
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact_form textarea {
+  height: 120px; /* Adjust height as needed */
+}
+
+.contact_form button {
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact_form button:hover {
+  background-color: #ffffff;
+  color: black;
+}

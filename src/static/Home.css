@@ -1,0 +1,209 @@
+.home {
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #f6f7f9 26px
+    ),
+    repeating-linear-gradient(#c1c1c155, #c1c1c1);
+}
+
+.sss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 100px 0;
+  height: 87vh;
+}
+
+.sss img {
+  width: 500px;
+  border-radius: 30px 0 0 30px;
+}
+
+.sss div {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 80px 20px;
+  border-radius: 0 30px 30px 0;
+}
+
+.home_info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_info p {
+  font-size: 40px;
+  background-image: none;
+  color: #ffffff;
+}
+
+.home_info a {
+  text-align: center;
+  background-color: #ffffff;
+  width: 320px;
+  border-radius: 5px;
+}
+
+.home_info a:hover {
+  background-color: #8d8c8c;
+}
+
+.home_info a p {
+  color: black;
+  padding: 15px;
+  font-size: 35px;
+}
+
+.gray_background {
+  background-color: black;
+  margin: 20px 0;
+  text-align: center;
+  padding: 25px;
+}
+
+.gray_background h2 {
+  font-size: 35px;
+  margin: 15px 0;
+}
+
+.inner_home_content {
+  text-align: start;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.gray_background ul,
+ol {
+  list-style-type: none; /* Removes bullets and numbers */
+  padding: 0; /* Optional: Removes default padding */
+  margin: 0; /* Optional: Removes default margin */
+}
+
+/***** ABOUT US *****/
+.about_us,
+.services,
+.approach,
+.testimonials,
+.clients_love {
+  background-color: #c1c1c1;
+  margin: 30px;
+  padding: 10px 50px;
+}
+
+.clients_love {
+  background-color: #ffffff;
+}
+
+.approach,
+.services {
+  background-color: black;
+  color: #ffffff;
+}
+
+.approach img {
+  width: 150px;
+}
+
+.approach ul {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.approach li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  gap: 20px;
+}
+
+.clients_love,
+.about_us,
+.testimonials {
+  border-radius: 8px;
+}
+
+.about_us p,
+.approach li,
+.clients_love li,
+.testimonials .testimonial {
+  margin: 15px 0;
+  font-size: 20px;
+  line-height: 125%;
+}
+
+.services .inner_home_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  row-gap: 100px;
+  align-items: flex-start;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  gap: 20px;
+}
+
+.service img {
+  height: 150px;
+  border-radius: 5px;
+}
+
+.service p {
+  font-size: 20px;
+}
+
+.clients_love li {
+  font-size: 25px;
+}
+
+/************* ANIMATIONS *************/
+
+/* Slide to right */
+.slideRight {
+  /* Apply initial position */
+  transform: translateX(-50%);
+  animation: slideIn 1s forwards; /* Animation duration and fill mode */
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); /* Start position */
+  }
+  100% {
+    transform: translateX(0); /* End position */
+  }
+}
+
+/* Fade */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
